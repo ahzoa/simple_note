@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:id="@+id/fm1"
+    tools:context=".MainActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:background="#fafafa"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:id="@+id/m1"
+        android:gravity="center_vertical"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#222222"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textSize="17sp"
+            android:layout_marginLeft="11dp"
+            android:text="轻便签" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="9dp"
+            android:padding="2dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/note_edit_keyboard" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/m1"
+        android:id="@+id/m2"
+        android:background="@drawable/shadow"
+        android:orientation="vertical" />
+
+    <ListView
+        android:layout_below="@id/m2"
+        android:layout_margin="3dp"
+        android:id="@+id/listview"
+        android:scrollbars="none"
+        android:divider="#00000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="11dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/main_note_new" />
+    </LinearLayout>
+</RelativeLayout>
+</LinearLayout>
